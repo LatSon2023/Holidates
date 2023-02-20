@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoliDates</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main id="tool">
+        <header id="header">
+            <h1  class="header-title">HoliDates</h1>
+            <span class="header-sub-title"><b>"To travel is to love"</b></span>
+        </header>
+
+        <div class="container">
+            <section class="section">
+                <div class="query-options wrapper">
+                    <div class="layer"></div>
+                    <div class="wrapper-content">
+                        <span class="content-title">Query Options</span>
+                        <div class="container-input-form">
+                            <div class="row">
+                                <input type="text" placeholder="Search" class="search input-box">
+                                <input type="number" value="2022" placeholder="2022" class="year input-box">
+                                <input type="number" placeholder="Month" class="month input-box">
+                            </div>
+                            <div class="row">
+                                <input type="number" placeholder="Day" class="day input-box">
+                                <input type="text" value="VN" placeholder="Country Code" class="country-code input-box">
+                                <input type="text" placeholder="Language Code" class="language-code input-box">
+                            </div>
+                        </div>
+                        <div class="wrapper-mid-button">
+                            <button class="render-holiday-lists button">Render Holiday</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="holidays-of-country wrapper">
+                    <div class="layer"></div>
+                    <div class="wrapper-content">
+                        <span class="content-title">Holidays of <span class="country-name holidays-country-name">a Country</span></span>
+                        <ul class="container-lists"></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="country-lists wrapper">
+                    <div class="layer"></div>
+                    <div class="wrapper-content">
+                        <span class="content-title">Country List</span>
+                        <div class="wrapper-mid-button">
+                            <button class="render-country-lists button">Render Countries List</button>
+                        </div>
+                        <ul class="container-lists"></ul>
+                    </div>
+                </div>
+
+                <div class="language-lists wrapper">
+                    <div class="layer"></div>
+                    <div class="wrapper-content">
+                        <span class="content-title">Language List</span>
+                        <div class="wrapper-mid-button">
+                            <button class="render-language-lists button">Render Languages List</button>
+                        </div>
+                        <ul class="container-lists"></ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+<script src="./index.js"></script>
